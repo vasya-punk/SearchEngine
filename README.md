@@ -3,6 +3,8 @@
 ## Build
 
     mvn clean install
+    deploy war to tomcat
+    run tomcat
     
 ## Usage
 
