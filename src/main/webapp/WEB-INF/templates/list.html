@@ -1,0 +1,22 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Values</th>
+    </tr>
+    <th:block th:each="document : ${documents}">
+        <tr>
+            <td th:text="${document.name}">...</td>
+            <td th:text="${document.values}">...</td>
+        </tr>
+    </th:block>
+</table>
+<a href="/add">Add New</a>
+<a href="/search">Search Document</a>
+<a href="/list">Show All</a>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+</head>
+<body>
+<form action="#" th:action="@{/search}" th:object="${document}" method="post">
+    <label for="name">Name</label>
+    <input id="name" type="text" th:field="*{name}" />
+    <label for="values">Tokens</label>
+    <input id="values" type="text" th:field="*{values}" />
+    <input type="submit" />
+</form>
+</body>
+</html>

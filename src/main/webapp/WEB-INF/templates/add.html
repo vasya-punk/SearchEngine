@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Document</title>
+</head>
+<body>
+
+<form action="#" th:action="@{/add}" th:object="${document}" method="post">
+    <input type="text" th:field="*{name}" />
+    <input type="text"  th:field="*{values}" />
+    <input type="submit" />
+</form>
+</body>
+</html>
